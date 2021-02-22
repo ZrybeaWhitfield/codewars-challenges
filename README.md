@@ -1,3 +1,3 @@
 # codewars-challenges
 
-Adding codewars challenge code 
+This is a repo to collect all of my daily codewars challenges 
