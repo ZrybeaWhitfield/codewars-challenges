@@ -8,4 +8,4 @@
 
 // tags: FUNDAMENTALS, MATHEMATICS, ALGORITHMS, NUMBERS
 // my solution:
-let twiceAsOld = (dadYearsOld, sonYearsOld) => Math.abs(dadYearsOld - sonYearsOld*2)
+let twiceAsOld = (dadYearsOld, sonYearsOld) => Math.abs(dadYearsOld - sonYearsOld*2) 
