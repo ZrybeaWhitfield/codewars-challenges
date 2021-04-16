@@ -10,8 +10,14 @@ var reverseString = function(s) {
 //Assume the environment does not allow you to store 64-bit integers (signed or unsigned).
 
 var reverse = function(x) {
-    return parseInt(x.toString().split("").reverse().join("")) * Math.sign(x)
+
+    let result = parseInt(Math.abs(x).toString().split("").reverse().join("")) * Math.sign(x)
+
+    if(result > 2**31 -1 || result < -(2**31)){
+        return 0
+    }else{
+        return result
+    }
 
 };
-
-//getting fails at integers tyhat are above 64-bit? 
+//getting fails at integers tyhat are above 64-bit?
