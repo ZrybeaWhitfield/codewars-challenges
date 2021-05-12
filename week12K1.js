@@ -1,25 +1,29 @@
-// Kata: 6kyu "Count letters in string" https://www.codewars.com/kata/5808ff71c7cfa1c6aa00006d/train/javascript
+// Kata: 6kyu "Count letters in string" https://www.codewars.com/kata/5808ff71c7cfa1c6aa00006d
 
-// Given an array of ints, return the index such that the sum of the elements to the right of that index equals the sum of the elements to the left of that index. If there is no such index, return -1. If there is more than one such index, return the left-most index.
+// In this kata, you've to count lowercase letters in a given string and return the letter count in a hash with 'letter' as key and count as 'value'. The key must be 'symbol' instead of string in Ruby and 'char' instead of string in Crystal.
 //
-// For example:
+// Example:
 //
-// peak([1,2,3,5,3,2,1]) = 3, because the sum of the elements at indexes 0,1,2 == sum of elements at indexes 4,5,6. We don't sum index 3.
-// peak([1,12,3,3,6,3,1]) = 2
-// peak([10,20,30,40]) = -1
-// --For Haskell
-// peak [1,12,3,3,6,3,1] == Just 2
-// peak [10,20,30,40]  == Nothing
-// The special case of an array of zeros (for instance [0,0,0,0]) will not be tested.
-//
-// More examples in the test cases.
-//
-// Good luck!
-//
+// letter_count('arithmetics') //=> {"a": 1, "c": 1, "e": 1, "h": 1, "i": 2, "m": 1, "r": 1, "s": 1, "t": 2}
 
-
-// tags: ALGORITHMS, ARRAYS
+// tags: FUNDAMENTALS, STRINGS, HASHES, DATA STRUCTURES
 // my solution:
+function letterCount(s){
+  let obj = {}
+  s.split('').forEach(letter =>{
+    if(obj[letter]){
+    obj[letter] += 1
+
+    }else{
+      obj[letter] = 1
+    }
+
+  })
+  return obj
+}
+
+
+//ALT USING MAP
 
 function letterCount(s){
     let map = new Map()
