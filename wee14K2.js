@@ -1,17 +1,14 @@
-// Kata: 8kyu "Are You Playing Banjo?" https://www.codewars.com/kata/53af2b8861023f1d88000832
+// Kata: 8kyu "Number toString" https://www.codewars.com/kata/53934feec44762736c00044b
 
-// Create a function which answers the question "Are you playing banjo?".
-// If your name starts with the letter "R" or lower case "r", you are playing banjo!
+// The code gives an error!
 //
-// The function takes a name as its only argument, and returns one of the following strings:
-//
-// name + " plays banjo"
-// name + " does not play banjo"
-// Names given are always valid strings.
+// a = 123.toString
+// Fix it!
 //
 
 
-// tags: FUNDAMENTALS, STRINGS, FUNCTIONS, CONTROL FLOW, BASIC LANGUAGE FEATURES
+
+// tags: BUGS, STRINGS
 // my solution:
 
 var a = (123).toString();
