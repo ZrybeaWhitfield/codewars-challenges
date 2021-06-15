@@ -5,7 +5,7 @@
 //
 // Can you help me fix the function?
 
-// tags: FUNDAMENTALS
+// tags: FUNDAMENTALS, STRINGS
 // my solution:
 
 function addFive(num) {
