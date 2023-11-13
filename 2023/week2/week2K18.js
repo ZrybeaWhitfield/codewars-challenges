@@ -1,5 +1,18 @@
-// Kata: 7kyu "Flatten and sort an array" https://www.codewars.com/kata/57ee99a16c8df7b02d00045f
+// Kata: 8kyu "Color Ghost" https://www.codewars.com/kata/53f1015fa9fe02cbda00111a
 
-// tags: ARRAYS, SORTING, FUNDAMENTALS
+// tags: OBJECT-ORIENTED PROGRAMMING, FUNDAMENTALS
 
 // my solution:
+class Ghost {
+    constructor() {
+      this.colors = ['white', 'yellow', 'purple', 'red']
+    }
+      
+    get color() {
+      return this.colors[this.getRandomInt(4)]
+    }
+      
+    getRandomInt(max) {
+      return Math.floor(Math.random() * max);
+    }
+  }

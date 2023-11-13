@@ -1,5 +1,20 @@
-// Kata: 7kyu "Flatten and sort an array" https://www.codewars.com/kata/57ee99a16c8df7b02d00045f
+// Kata: 8kyu "Classy Classes" https://www.codewars.com/kata/55a144eff5124e546400005a
 
-// tags: ARRAYS, SORTING, FUNDAMENTALS
+// tags: FUNDAMENTALS, OBJECT-ORIENTED PROGRAMMING
 
 // my solution:
+class Person {
+    constructor(name, age) {
+      this.name =name
+      this.age =age
+    }
+    
+    get info() {
+      return this.getInfo()
+    }
+    
+    getInfo() {
+       return `${this.name}s age is ${this.age}`
+    }
+  }
+  
