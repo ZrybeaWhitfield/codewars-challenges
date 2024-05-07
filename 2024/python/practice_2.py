@@ -23,9 +23,25 @@ print(find_short("turns out random test cases are easier than writing out basic 
 
 
 def lottery(s):
-    pass
+    new_str = ""
+    str_arr = list(s)
+
+    for ltr in str_arr:
+        if ltr.isdigit():
+            new_str += ltr
+
+    return_str = ""
+    if len(new_str) == 0:
+        return "One more run!"
+    else:
+        for num in new_str:
+            if num in return_str:
+                pass
+            else:
+                return_str += num
+
+    return return_str
 
 
 print(lottery("wQ8Hy0y5m5oshQPeRCkG"))  # "805"
 print(lottery("ffaQtaRFKeGIIBIcSJtg"))  # "One more run!"
-
